@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Warm Social Theme - Dark Teal & Coral */
+  --color-bg: #0f4c4c;
+  --color-fg: #f0fffe;
+  --color-accent: #ff6b6b;
+  --color-primary: #4ecdc4;
+  --color-secondary: #45b7b8;
+  --color-surface: #1a5f5f;
+  --color-border: #2d7373;
+  --color-success: #26d0ce;
+  --color-warning: #ffa726;
+  --color-danger: #ef5350;
+}
+
+[data-theme="celo"] {
+  --color-bg: #000000;
+  --color-fg: #ffffff;
+  --color-accent: #fbcc5c;
+  --color-primary: #fbcc5c;
+  --color-secondary: #35d07f;
+  --color-surface: #1a1a1a;
+  --color-border: #333333;
+  --color-success: #35d07f;
+  --color-warning: #fbcc5c;
+  --color-danger: #ff6b6b;
+}
+
+[data-theme="solana"] {
+  --color-bg: #1a0d2e;
+  --color-fg: #ffffff;
+  --color-accent: #9945ff;
+  --color-primary: #14f195;
+  --color-secondary: #9945ff;
+  --color-surface: #2d1b4e;
+  --color-border: #4c2a85;
+  --color-success: #14f195;
+  --color-warning: #ffa726;
+  --color-danger: #ff6b6b;
+}
+
+[data-theme="base"] {
+  --color-bg: #0052ff;
+  --color-fg: #ffffff;
+  --color-accent: #0052ff;
+  --color-primary: #0052ff;
+  --color-secondary: #0066ff;
+  --color-surface: #1a5fff;
+  --color-border: #3366ff;
+  --color-success: #26d0ce;
+  --color-warning: #ffa726;
+  --color-danger: #ff6b6b;
+}
+
+[data-theme="coinbase"] {
+  --color-bg: #0d1421;
+  --color-fg: #ffffff;
+  --color-accent: #0052ff;
+  --color-primary: #0052ff;
+  --color-secondary: #1652f0;
+  --color-surface: #1a2332;
+  --color-border: #2d3748;
+  --color-success: #26d0ce;
+  --color-warning: #ffa726;
+  --color-danger: #ff6b6b;
+}
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+  
+  body {
+    @apply bg-bg text-fg font-sans antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-surface bg-opacity-80 backdrop-blur-sm border border-border rounded-lg;
+  }
+  
+  .btn-primary {
+    @apply bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition-all duration-200 shadow-md hover:shadow-lg;
+  }
+  
+  .btn-secondary {
+    @apply bg-surface text-fg px-6 py-3 rounded-lg font-medium hover:bg-opacity-80 transition-all duration-200 border border-border;
+  }
+  
+  .btn-outline {
+    @apply border border-accent text-accent px-6 py-3 rounded-lg font-medium hover:bg-accent hover:text-white transition-all duration-200;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 bg-surface border border-border rounded-lg text-fg placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all duration-200;
+  }
+  
+  .metric-card {
+    @apply glass-card p-6 hover:bg-opacity-90 transition-all duration-200;
+  }
+  
+  .nav-item {
+    @apply flex items-center space-x-3 px-4 py-3 rounded-lg text-fg hover:bg-surface hover:bg-opacity-60 transition-all duration-200 cursor-pointer;
+  }
+  
+  .nav-item.active {
+    @apply bg-accent bg-opacity-20 text-accent;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+  
+  .bg-gradient-primary {
+    @apply bg-gradient-to-r from-primary to-accent;
+  }
+  
+  .shadow-glow {
+    box-shadow: 0 0 20px rgba(255, 107, 107, 0.3);
+  }
+}
