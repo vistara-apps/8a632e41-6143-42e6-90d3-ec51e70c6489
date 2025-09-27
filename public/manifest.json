@@ -1,0 +1,14 @@
+{
+  "name": "CreatorDAO Videos",
+  "description": "CreatorDAO Videos is a Base Mini App built with Zara.",
+  "image": "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=OG",
+  "external_url": "https://8a632e41-6143-42e6-90d3-ec51e70c6489.vercel.app",
+  "properties": {
+    "app": {
+      "name": "CreatorDAO Videos",
+      "description": "CreatorDAO Videos is a Base Mini App built with Zara.",
+      "url": "https://8a632e41-6143-42e6-90d3-ec51e70c6489.vercel.app",
+      "icon": "https://0co.to/images/zara-2.png"
+    }
+  }
+}

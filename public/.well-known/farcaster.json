@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "CreatorDAO Videos",
+    "subtitle": "Built with Zara",
+    "description": "CreatorDAO Videos is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://8a632e41614342e690d3ec51e70c6489-28cb.vercel.app",
+    "splashImageUrl": "https://8a632e41614342e690d3ec51e70c6489-28cb.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://8a632e41614342e690d3ec51e70c6489-28cb.vercel.app/image.png",
+    "tagline": "CreatorDAO Videos",
+    "screenshotUrls": [
+      "https://8a632e41614342e690d3ec51e70c6489-28cb.vercel.app/screenshot.png",
+      "https://8a632e41614342e690d3ec51e70c6489-28cb.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://8a632e41614342e690d3ec51e70c6489-28cb.vercel.app/api/webhook"
+  }
+}
